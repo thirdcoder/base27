@@ -57,4 +57,6 @@ function sv2bts(sv) {
 }
 // TODO: bts2sv, groups of 3 trits
 
-console.log(sv2bts('AZ'));
+module.exports = {
+  sv2bts: sv2bts,
+};
