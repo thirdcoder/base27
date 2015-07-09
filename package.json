@@ -1,0 +1,26 @@
+{
+  "name": "base27",
+  "description": "balanced septemvigesimal, base 27",
+  "version": "0.0.1",
+  "main": "base27.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/base27.git"
+  },
+  "keywords": [
+    "ternary",
+    "base3",
+    "base27",
+    "radix",
+    "septemvigesimal",
+    "balanced",
+    "math"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
