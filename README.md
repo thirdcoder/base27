@@ -20,20 +20,20 @@ Usage:
 
 Each base27 digit represents 3 trits:
 
-     0 000      0
-    +1 001      A           -1 00i    N
-    +2 01i      B           -2 0i1    O
-    +3 010      C           -3 0i0    P
-    +4 011      D           -4 0ii    Q
-    +5 1ii      E           -5 i11    R
-    +6 1i0      F           -6 i10    S
-    +7 1i1      G           -7 i1i    T
-    +8 10i      H           -8 i01    U
-    +9 100      I           -9 i00    V
-   +10 101      J           -10 i01   W
-   +11 11i      K           -11 ii1   X
-   +12 110      L           -12 ii0   Y
-   +13 111      M           -13 iii   Z
+      0 000      0
+     +1 001      A           -1 00i    N
+     +2 01i      B           -2 0i1    O
+     +3 010      C           -3 0i0    P
+     +4 011      D           -4 0ii    Q
+     +5 1ii      E           -5 i11    R
+     +6 1i0      F           -6 i10    S
+     +7 1i1      G           -7 i1i    T
+     +8 10i      H           -8 i01    U
+     +9 100      I           -9 i00    V
+    +10 101      J           -10 i01   W
+    +11 11i      K           -11 ii1   X
+    +12 110      L           -12 ii0   Y
+    +13 111      M           -13 iii   Z
 
 Currently only balanced base 27 is supported (-13 to +13).
 
