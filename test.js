@@ -3,6 +3,8 @@
 var test = require('tape');
 var sv2bts = require('./').sv2bts;
 var bts2sv = require('./').bts2sv;
+var n2sv = require('./').n2sv;
+var sv2n = require('./').sv2n;
 
 test('sv2bts', function(t) {
   t.equal(sv2bts('Z'), 'iii');
@@ -24,5 +26,14 @@ test('bts2sv', function(t) {
   t.equal(bts2sv('iii001'), 'ZA');
   t.equal(bts2sv('111100'), 'MI');
   t.equal(bts2sv('101i0i'), 'JW');
+  t.end();
+});
+
+test('n2sv', function(t) {
+  t.equal(n2sv(0), '0');
+  t.equal(n2sv(1), 'A');
+  t.equal(n2sv(-13), 'Z');
+  t.equal(n2sv(1234), 'BUU');
+  t.equal(n2sv(-9464), 'Z0M');
   t.end();
 });
