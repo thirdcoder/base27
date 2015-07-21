@@ -41,6 +41,24 @@ var N_TO_BTS3 = {
   13: '111',  '-13': 'iii',
 };
 
+var BTS_TO_SV = {
+  '000': '0',
+  '001': 'A', '00i': 'N',
+  '01i': 'B', '0i1': 'O',
+  '010': 'C', '0i0': 'P',
+  '011': 'D', '0ii': 'Q',
+  '1ii': 'E', 'i11': 'R',
+  '1i0': 'F', 'i10': 'S',
+  '1i1': 'G', 'i1i': 'T',
+  '10i': 'H', 'i01': 'U',
+  '100': 'I', 'i00': 'V',
+  '101': 'J', 'i0i': 'W',
+  '11i': 'K', 'ii1': 'X',
+  '110': 'L', 'ii0': 'Y',
+  '111': 'M', 'iii': 'Z',
+
+};
+
 function sv2bts(sv) {
   var bt = '';
 
@@ -55,8 +73,32 @@ function sv2bts(sv) {
 
   return bt;
 }
-// TODO: bts2sv, groups of 3 trits
+
+function bts2sv(bt) {
+  var i = bt.length;
+  var sv = '';
+
+  do
+  {
+    var c1 = bt.charAt(--i);
+    var c2 = bt.charAt(--i);
+    var c3 = bt.charAt(--i);
+    if (c2 === '') c2 = '0';
+    if (c3 === '') c3 = '0';
+
+    var digit = BTS_TO_SV[c3 + c2 + c1];
+    if (digit === undefined) throw new Error('bts2sv('+bt+'): invalid balanced ternary digit triplet: '+c3+c2+c1);
+
+    sv = digit + sv;
+  } while (i > 0);
+
+  return sv;
+}
 
 module.exports = {
   sv2bts: sv2bts,
+  bts2sv: bts2sv,
+  SV_TO_N: SV_TO_N,
+  N_TO_BTS3: N_TO_BTS3,
+  BTS_TO_SV: BTS_TO_SV,
 };
