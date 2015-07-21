@@ -37,3 +37,13 @@ test('n2sv', function(t) {
   t.equal(n2sv(-9464), 'Z0M');
   t.end();
 });
+
+test('sv2n', function(t) {
+  t.equal(sv2n('0'), 0);
+  t.equal(sv2n('A'), 1);
+  t.equal(sv2n('Z'), -13);
+  t.equal(sv2n('BUU'), 1234);
+  t.equal(sv2n('Z0M'), -9464);
+  t.equal(sv2n('AAA'), 757);
+  t.end();
+});
