@@ -49,5 +49,5 @@ References:
 http://digitalcommons.butler.edu/wordways/vol26/iss2/2/
 Sallows, Lee (1993) "Base 27: The Key To A New Gematria," Word Ways: Vol. 26: Iss. 2, Article 2.
 Available at: http://digitalcommons.butler.edu/wordways/vol26/iss2/2
--- uses balanced base 27 system: "\_" for 0, and then A-Z for 0-26
+-- uses unbalanced base 27 system: "\_" for 0, and then A-Z for 0-26
 
