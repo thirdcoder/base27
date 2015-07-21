@@ -25,7 +25,7 @@ process.argv.slice(2).forEach(function(arg) {
   // bts -> n -> sv
 
   if (maybe_sv(arg)) {
-    console.log(sv2bts(arg)+' = '+n2sv(arg)+' = '+arg);
+    console.log(sv2bts(arg)+' = '+sv2n(arg)+' = '+arg);
   }
 
   if (maybe_n(arg)) {
