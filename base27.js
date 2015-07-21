@@ -1,5 +1,8 @@
 'use strict';
 
+var bts2n = require('balanced-ternary').bts2n;
+var n2bts = require('balanced-ternary').n2bts;
+
 // balanced septemvigesimal (BSV)
 // aka:
 // "septemvigesimal" https://en.wikipedia.org/wiki/Ternary_numeral_system#Compact_ternary_representation:_base_9_and_27
@@ -95,9 +98,19 @@ function bts2sv(bt) {
   return sv;
 }
 
+function n2sv(n) {
+  return bts2sv(n2bts(n));
+}
+
+function sv2n(sv) {
+  return bts2n(sv2bts(sv));
+}
+
 module.exports = {
   sv2bts: sv2bts,
   bts2sv: bts2sv,
+  n2sv: n2sv,
+  sv2n: sv2n,
   SV_TO_N: SV_TO_N,
   N_TO_BTS3: N_TO_BTS3,
   BTS_TO_SV: BTS_TO_SV,
