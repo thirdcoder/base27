@@ -5,7 +5,7 @@
   "main": "base27.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/base27.git"
+    "url": "git@github.com:thirdcoder/base27.git"
   },
   "keywords": [
     "ternary",
@@ -22,5 +22,6 @@
   "dependencies": {},
   "devDependencies": {
     "tape": "^4.0.0"
-  }
+  },
+  "license": "MIT"
 }
