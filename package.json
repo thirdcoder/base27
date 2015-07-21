@@ -13,6 +13,7 @@
     "base27",
     "radix",
     "septemvigesimal",
+    "heptavigesimal",
     "balanced",
     "math"
   ],

@@ -1,13 +1,22 @@
 # base27
 
-Balanced septemvigesimal to balanced-ternary
+Balanced septemvigesimal (heptavigesimal) to balanced ternary
 
 Usage:
 
     var sv2bts = require('base27').sv2bts;
+    var bts2sv = require('base27').bts2sv;
+    var n2sv = require('base27').n2sv;
+    var sv2n = require('base27').sv2n;
 
-    sv2bts('Z');    // iii
-    sv2bts('ZA');   // iii001
+    sv2bts('Z');    // 'iii'
+    sv2bts('ZA');   // 'iii001'
+
+    bts2sv('iii001');   // 'ZA'
+
+    sv2n('ZA');     // -350
+    n2sv(-350);     // 'ZA'
+
 
 Each base27 digit represents 3 trits:
 
@@ -25,6 +34,15 @@ Each base27 digit represents 3 trits:
    +11 11i      K           -11 ii1   X
    +12 110      L           -12 ii0   Y
    +13 111      M           -13 iii   Z
+
+Currently only balanced base 27 is supported (-13 to +13).
+
+Analogous to [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) (base 16)
+for binary, where each hex digit represents 4 bits; each septemvigesimal digit
+represents 3 trits. A more compact representation for
+[balanced-ternary](https://github.com/thirdcoder/balanced-ternary).
+See also [nonary](https://github.com/thirdcoder/nonary) (base 9, each digit = 2 trits).
+
 
 References:
 
