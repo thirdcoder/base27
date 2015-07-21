@@ -9,7 +9,7 @@ var bts2n = require('balanced-ternary').bts2n;
 var n2bts = require('balanced-ternary').n2bts;
 
 function maybe_sv(s) {
-  return !!s.match(/^[A-Z]+$/);
+  return !!s.match(/^[0A-Z]+$/);
 }
 
 function maybe_bts(s) {
