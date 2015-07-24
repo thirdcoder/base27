@@ -2,6 +2,9 @@
 
 Balanced septemvigesimal (heptavigesimal) to balanced ternary
 
+[![Build Status](https://travis-ci.org/thirdcoder/base27.svg?branch=master)](https://travis-ci.org/thirdcoder/base27)
+[![npm version](https://badge.fury.io/js/base27.svg)](https://www.npmjs.com/package/base27)
+
 Usage:
 
     var sv2bts = require('base27').sv2bts;
