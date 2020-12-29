@@ -7,18 +7,20 @@ Balanced septemvigesimal (heptavigesimal) to balanced ternary
 
 Usage:
 
-    var sv2bts = require('base27').sv2bts;
-    var bts2sv = require('base27').bts2sv;
-    var n2sv = require('base27').n2sv;
-    var sv2n = require('base27').sv2n;
+```js
+var sv2bts = require('base27').sv2bts;
+var bts2sv = require('base27').bts2sv;
+var n2sv = require('base27').n2sv;
+var sv2n = require('base27').sv2n;
 
-    sv2bts('Z');    // 'iii'
-    sv2bts('ZA');   // 'iii001'
+sv2bts('Z');    // 'iii'
+sv2bts('ZA');   // 'iii001'
 
-    bts2sv('iii001');   // 'ZA'
+bts2sv('iii001');   // 'ZA'
 
-    sv2n('ZA');     // -350
-    n2sv(-350);     // 'ZA'
+sv2n('ZA');     // -350
+n2sv(-350);     // 'ZA'
+```
 
 
 Each base27 digit represents 3 trits:
